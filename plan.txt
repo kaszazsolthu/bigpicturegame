@@ -1,0 +1,18 @@
+
+--12 kép =>fődiv háttér
+--fődiv felosztása négyzetráccsral griddel => átlátszóság szabályzása
+--fix pont gridek száma => aktuálisat megjeleníteni
+--Főcím h1-ben 
+--bezárható utasítások.
+--a képek véletlenszerűen jelennek meg
+--a végén szöveg a végső pontszámmal
+--a végső pontszám 2 perc után.
+-- a számláló színének változtatása zöld, sárga, piros, villogó piros;
+--lista a lehetséges válaszokkal (pl.: a kép mellett);
+--legyen ön is miliomos szerű segítség
+    =>felező
+    =>helyes válasz megadása => egy pontja marad
+    =>(rávezető szövegek)
+--az összes kártya felfordítása után azonnali kiesés;
+--Prompt név bekérése
+--local storage-ban elmenteni a High Scores

@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap");
+@font-face {
+  font-family: "Maldini";
+  src: url("font/maldini.otf");
+}
+
+* {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+body {
+  background-color: #73322c;
+}
+
+#bigContainer {
+  display: flex;
+}
+
+#description-container {
+  width: 30%;
+  height: 500px;
+  background-color: #a69886;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+#answer {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#userNameContainer {
+  font-size: x-large;
+  margin-left: 10px;
+  height: 25px;
+}
+#final-point {
+  margin-left: 10px;
+}
+#results {
+  margin-left: 10px;
+}
+
+.option {
+  font-family: "Noto Sans TC", sans-serif;
+  background-color: #f2e5d5;
+  box-shadow: 0 0 2px black;
+  border-radius: 5px;
+  color: black;
+  padding: 7px;
+  border: solid black;
+  width: 80%;
+  margin: 2px;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.option:hover {
+  background-color: #ffe0b2;
+  transform: scale(1.05);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 70%;
+  height: 500px;
+  background-image: url("img/adam_sandler.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.visible {
+  background-color: #f2e5d5;
+  border: solid black;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+}
+
+#logo {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+#logo img {
+  width: 100%;
+}
+
+.nonvisible {
+  background-color: transparent;
+  transition: 1s ease-in;
+}
+
+.message {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 50%;
+  min-height: 300px;
+  margin-top: 100px;
+  margin-left: 10%;
+  z-index: 2;
+  border: 2px solid black;
+  box-shadow: 2px 2px 3px black;
+  color: green;
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Maldini";
+  font-size: 50px;
+}
+.message button {
+  display: block;
+  margin: auto;
+  margin-top: 100px;
+  font-size: large;
+}
+#countdown {
+  background-color: #f2e5d5;
+  border: 2px solid black;
+  box-shadow: 1px 1px 3px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  color: #73322c;
+  width: 60px;
+  height: 60px;
+  font-weight: bold;
+  font-size: larger;
+}
+
+#countdown-container {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
+
+.message {
+  background-color: #a69886;
+}
+.message button {
+  height: 50px;
+  background-color: #f2e5d5;
+  border: 2px solid black;
+  box-shadow: 1px 1px 3px black;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+.message button:hover {
+  background-color: #ffe0b2;
+}
+
+#cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#nameInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 150px;
+  width: 500px;
+}
+
+#nameSendBtn {
+  margin-top: 9px;
+}
+#helperBtnContainer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 90%;
+}
+
+#bulb {
+  width: 70px;
+  color: black;
+}
+
+#question {
+  padding: 2px;
+  width: 60px;
+  color: black;
+}
+
+#half {
+  margin-top: 3px;
+  width: 55px;
+  height: 45px;
+  color: black;
+}
+
+.helperBtn {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+  width: 20%;
+  height: 50px;
+  background-color: #f2e5d5;
+  border: 2px solid black;
+  box-shadow: 1px 1px 3px black;
+  border-radius: 5px;
+  padding: 5px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+  margin-left: 30px;
+}
+
+.helperBtn:hover {
+  transform: scale(1.1);
+  background-color: #ffe0b2;
+}
+#hintContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#big-toplist-container {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+#toplist-container {
+  width: 80%;
+}
+.toplist-name {
+  width: 20%;
+}
+.toplist-points {
+  width: 20%;
+}
+.toplist-item {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 0.5px solid white;
+  color: aliceblue;
+}
+h3 {
+  text-align: center;
+  color: white;
+}

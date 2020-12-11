@@ -1,0 +1,47 @@
+badBoys
+    =>Bad Boyz
+    =>Snoop Dogg
+    =>The Last Boy Scout
+    =>The White House
+E.T
+    =>E.T.
+    =>Yoda
+    =>Diplodocus
+    =>Old lady
+Snowman
+    =>Snowman
+    =>Powdered sugar
+    =>Christmas tree decoration
+    =>Coconut flakes
+
+ejjeli-baglyok
+	=>Éjjeli baglyok
+	=>Éjjeli kávézó
+	=>Nagyvárosi magány
+	=>New Yorki éj
+ejjeli-orjarat
+	=>Éjjeli őrjárat
+	=>A három testőr
+	=>A mamelukok támadása
+	=>Pizarro útja
+leany-gyongy-fulbevaloval
+	=>Leány gyöngy fülbevalóval
+	=>Mona Lisa
+	=>Milói Vénusz
+	=>Whistler anyja
+
+Bill Gates
+    => Bill Gates
+    => Elon Musk
+    => Soros György
+    => Steve Jobs
+Adam Sandler
+    => Adam Sandler
+    => Jim Carrey
+    => Rowan Atkinson
+    => Will Ferrell
+Vissza a jövőbe
+    => Vissza a jövőbe
+    => Reszkessetek betörők
+    => Knight Rider
+    => Forrest Gump

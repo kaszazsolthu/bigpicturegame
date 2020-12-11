@@ -1,0 +1,11 @@
+badBoys     =>The name of the team created this game.
+E.T         =>The one who phoned home.
+snowMan     =>Anthropomorphic snow sculpture.
+
+Bill Gates  => Sokáig a világ leggazdagabb emberének tartották számon
+Adam Sandler => A következő filmekben szerepelt: Az 50 első randi főszereplője
+Vissza a jövőbe => Michael J. Fox leghíresebb filmje
+
+ejjeli-baglyok => Edward Hopper festménye, mely az amerikai festőművészet egyik legismertebb alkotása.
+ejjeli-orjarat => Rembrandt leghíresebb festménye.
+leany-gyongy-fulbevaloval => A kép Turbános nő néven is ismert.

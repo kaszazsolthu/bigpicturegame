@@ -1,0 +1,187 @@
+body {
+  background-color: black;
+}
+
+.bodyNonVisible {
+  opacity: 0%;
+}
+
+.bodyVisible {
+  -webkit-transition: 5s ease;
+  transition: 5s ease;
+  opacity: 100%;
+}
+
+.pictureContainer {
+  opacity: 100%;
+  -webkit-transition: 5s ease;
+  transition: 5s ease;
+  display: -ms-grid;
+  display: grid;
+  position: absolute;
+  left: calc((100vw - (150px * 3)) / 2);
+  top: calc((100vh - (150px * 3)) / 2);
+  -ms-grid-rows: (150px)[3];
+      grid-template-rows: repeat(3, 150px);
+  -ms-grid-columns: (150px)[3];
+      grid-template-columns: repeat(3, 150px);
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+      grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 img8 img9";
+  grid-gap: 1px;
+}
+
+.pictureGallery {
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+}
+
+.img1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: img1;
+  background-position: 0px 0px;
+  -webkit-transition: 5s ease;
+  transition: 5s ease;
+  /* transition:transform 30s; */
+}
+
+.img2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: img2;
+  background-position: -150px 0px;
+  -webkit-transition: 5s ease;
+  transition: 5s ease;
+}
+
+.img3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: img3;
+  background-position: -300px 0px;
+  -webkit-transition: 5s ease;
+  transition: 5s ease;
+}
+
+.img4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: img4;
+  background-position: 0px -150px;
+  -webkit-transition: 5s ease;
+  transition: 5s ease;
+}
+
+.img5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: img5;
+  background-position: -150px -150px;
+  -webkit-transition: 5s ease;
+  transition: 5s ease;
+}
+
+.img6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: img6;
+  background-position: -300px -150px;
+  -webkit-transition: 5s ease;
+  transition: 5s ease;
+}
+
+.img7 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: img7;
+  background-position: 0px -300px;
+  -webkit-transition: 5s ease;
+  transition: 5s ease;
+}
+
+.img8 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: img8;
+  background-position: -150px -300px;
+  -webkit-transition: 5s ease;
+  transition: 5s ease;
+}
+
+.img9 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: img9;
+  background-position: -300px -300px;
+  -webkit-transition: 5s ease;
+  transition: 5s ease;
+}
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6,
+.img7,
+.img8,
+.img9 {
+  background-image: url(../adam_sandler.jpg);
+  height: 150px;
+  width: 150px;
+}
+
+.noDisplay {
+  opacity: 0%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.displayWelcome {
+  opacity: 0%;
+}
+
+.displayFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.welcomeT {
+  color: white;
+  opacity: 0%;
+  background-color: #cad658;
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+.welcomeText {
+  opacity: 100%;
+  color: white;
+  -webkit-transition: 5s ease;
+  transition: 5s ease;
+  background-color: #cad658;
+  font-size: 3rem;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+small {
+  position: absolute;
+  top: 0;
+  left: 45%;
+  color: white;
+  background-color: black;
+}
+/*# sourceMappingURL=intro.css.map */

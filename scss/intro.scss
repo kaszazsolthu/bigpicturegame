@@ -1,0 +1,170 @@
+$imageHeight: 150px;
+$imageWidth: 150px;
+$xSetting: 0px;
+$ySetting: 0px;
+$gridRows: 3;
+$gridColumns: 3;
+
+body {
+    background-color:black;
+    // opacity:100%;
+}
+
+.bodyNonVisible{
+    opacity:0%;
+}
+
+.bodyVisible{
+    transition: 5s ease;
+    opacity:100%;
+}
+
+.pictureContainer {
+    opacity: 100%;
+    transition: 5s ease;
+    display: grid;
+    position: absolute;
+    left: calc((100vw - (#{$imageWidth} * #{$gridColumns})) / 2);
+    top: calc((100vh - (#{$imageHeight} * #{$gridRows})) / 2);
+    grid-template-rows: repeat($gridRows, $imageWidth);
+    grid-template-columns: repeat($gridColumns, $imageWidth);
+    background-repeat: no-repeat;
+    width: $imageWidth;
+    height: $imageHeight;
+    grid-template-areas:
+        "img1 img2 img3"
+        "img4 img5 img6"
+        "img7 img8 img9";
+    grid-gap: 1px;
+}
+
+.pictureGallery {
+    background-repeat: no-repeat;
+
+    width: $imageWidth;
+    height: $imageHeight;
+
+}
+.img1 {
+    grid-area: img1;
+    $xpos: $imageWidth * (0)-$xSetting;
+    $ypos: $imageHeight * (0)-$ySetting;
+    background-position: $xpos $ypos;
+    transition: 5s ease;
+    /* transition:transform 30s; */
+}
+.img2 {
+    grid-area: img2;
+    $xpos: $imageWidth * (-1)-$xSetting;
+    $ypos: $imageHeight * (0)-$ySetting;
+    background-position: $xpos $ypos;
+    transition: 5s ease;
+}
+.img3 {
+    grid-area: img3;
+    $xpos: $imageWidth * (-2)-$xSetting;
+    $ypos: $imageHeight * (0)-$ySetting;
+    background-position: $xpos $ypos;
+    transition: 5s ease;
+}
+.img4 {
+    grid-area: img4;
+    $xpos: $imageWidth * (0)-$xSetting;
+    $ypos: $imageHeight * (-1)-$ySetting;
+    background-position: $xpos $ypos;
+    transition: 5s ease;
+}
+.img5 {
+    grid-area: img5;
+    $xpos: $imageWidth * (-1)-$xSetting;
+    $ypos: $imageHeight * (-1)-$ySetting;
+    background-position: $xpos $ypos;
+    transition: 5s ease;
+}
+.img6 {
+    grid-area: img6;
+    $xpos: $imageWidth * (-2)-$xSetting;
+    $ypos: $imageHeight * (-1)-$ySetting;
+    background-position: $xpos $ypos;
+    transition: 5s ease;
+}
+.img7 {
+    grid-area: img7;
+    $xpos: $imageWidth * (0)-$xSetting;
+    $ypos: $imageHeight * (-2)-$ySetting;
+    background-position: $xpos $ypos;
+    transition: 5s ease;
+}
+.img8 {
+    grid-area: img8;
+    $xpos: $imageWidth * (-1)-$xSetting;
+    $ypos: $imageHeight * (-2)-$ySetting;
+    background-position: $xpos $ypos;
+    transition: 5s ease;
+}
+.img9 {
+    grid-area: img9;
+    $xpos: $imageWidth * (-2)-$xSetting;
+    $ypos: $imageHeight * (-2)-$ySetting;
+    background-position: $xpos $ypos;
+    transition: 5s ease;
+}
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6,
+.img7,
+.img8,
+.img9 {
+    background-image: url(../adam_sandler.jpg);
+    height: $imageHeight;
+    width: $imageWidth;
+}
+
+.noDisplay {
+    opacity: 0%;
+    transform: rotate(90deg);
+}
+
+.displayWelcome {
+    opacity: 0%;
+}
+
+.displayFlex {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:100vh;
+}
+
+.welcomeT {
+    color: white;
+    opacity: 0%;
+
+    background-color: rgb(202, 214, 88);
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.welcomeText {
+    opacity: 100%;
+    color: white;
+    transition: 5s ease;
+    background-color: rgb(202, 214, 88);
+    font-size: 3rem;
+    padding: 1rem;
+    text-decoration:none;
+
+}
+
+small {
+    position: absolute;
+    top:0;
+    left: 45%;
+    color: white;
+    background-color:black;
+}

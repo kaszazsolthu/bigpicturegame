@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Javascript Game</title>
+  <meta charset="UTF-8" />
+  <!-- http://proger.i-forge.net/The_smallest_transparent_pixel/ -->
+  <link rel="icon" href="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav>
+    <div id="logo">
+      <img src="img/logo.png" />
+    </div>
+    <div id="countdown-container">
+      <p id="countdown"></p>
+    </div>
+  </nav>
+  <!-- clock -->
+
+  <!-- clock -->
+
+  <div id="bigContainer">
+    <div class="message"></div>
+
+    <div id="cover">
+      <div id="nameInput">
+        <p id="nameRequest">Please enter your name</p>
+        <input id="nameInputField" type="text" />
+        <button id="nameSendBtn">Save</button>
+      </div>
+    </div>
+
+    <section class="grid-container"></section>
+    <section id="description-container">
+      <p id="userNameContainer"></p>
+      <div id="final-point"></div>
+      <div id="results"></div>
+
+      <div id="answer">
+        <div id="btn1" class="option">Answer1</div>
+        <div id="btn2" class="option">Answer1</div>
+        <div id="btn3" class="option">Answer1</div>
+        <div id="btn4" class="option">Answer1</div>
+      </div>
+      <div id="helperBtnContainer">
+        <div id="helperBtn-1" class="helperBtn" title="Halving">
+          <img id="half" src="img/half.png" />
+        </div>
+        <div id="helperBtn-2" class="helperBtn" title="Hint">
+          <img id="bulb" src="img/bulb.png" />
+        </div>
+        <div id="helperBtn-3" class="helperBtn" title="Good answer">
+          <img id="question" src="img/question.png" />
+        </div>
+      </div>
+      <div id="hintContainer">
+        <p id="hintText">*Hint appears here*</p>
+      </div>
+    </section>
+  </div>
+  <h3>Toplist</h3>
+  <div id="big-toplist-container">
+
+    <div id="toplist-container"></div>
+  </div>
+  <script src="game.js"></script>
+  <script src="data.js"></script>
+  <script src="countdown.js"></script>
+  <script src="toplist.js"></script>
+  <script src="helpers.js"></script>
+</body>
+
+</html>
